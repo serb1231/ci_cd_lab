@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: go mod download
       - name: Run tests
-        run: go run ./main_test.go
+        run: go test ./...
   compile:
     needs: test          
     runs-on: ubuntu-latest
